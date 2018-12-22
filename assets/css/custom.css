@@ -3,7 +3,7 @@ html {
   scroll-behavior: smooth;
 }
 body{
-	background-color:#47d8ff;
+	background-color:#fff;
 	overflow-x:hidden;
 	
 }
@@ -22,14 +22,75 @@ body{
     position: absolute;
     left: 0;
     top: 1%;
+	z-index:99;
+	    width: 19%;
+    top: 28px;
 }
 
+.bg-slider img{
+	    z-index: 999;
+}
 .bg-slider{
-	background-image:url('../images/bg.png');
+	background-image:url('../images/slider_bg_raise.png');
 	    background-repeat: no-repeat;
     background-size: cover;
-	
+	    position: relative;
+	min-height: 550px;
 }
+
+
+.bg-slider-tictac {
+    background-image: url(../images/tictac_slider.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 620px;
+    position: absolute;
+    background-size: 51%;
+    /* right: 0; */
+    background-position: center;
+    /* left: 0; */
+    background-position-y: 79px;
+    margin: 0 auto;
+	/* animation */
+	 -webkit-animation-name: hvr-tictac;
+  animation-name: hvr-tictac;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  
+   display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+
+@-webkit-keyframes hvr-tictac {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+@keyframes hvr-tictac {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
 
 .bg-music-lab{
 	background: #65c6f2;
@@ -202,7 +263,7 @@ footer {
     font-size: 48px;
     line-height: 0.99;
      padding: 0 !important;
-	 color:white;
+	 /* color:white; */
 }
 
 .social {
@@ -212,8 +273,8 @@ footer {
 .navbar-light .navbar-nav.main-menu .nav-link {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    background: white;
-    color: #0a6c87;
+    background: #008d65;
+    color: #fff;
     margin: 0 9px;
     padding: 3px 15px 0;
     border-radius: 9px;
@@ -227,15 +288,19 @@ footer {
 }
 
 .bg-slider img {
-    width: 44%;
-    padding: 48px 0 0;
-    height: 40%;
+    width: 47%;
+    padding: 60px 0 0 0;
+    /* height: 40%; */
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
 }
-
 .bg-music-lab h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Richela', sans-serif;
     font-weight: bolder;
-    color: white;
+    color: #0d7963;
 	    text-align: center;
     width: 100%;
 	margin-bottom: 46px;
@@ -261,7 +326,7 @@ footer {
 
 
 .meet_the_band h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Richela', sans-serif;
     font-weight: bolder;
     color: #04c0f4;
 	    text-align: center;
@@ -406,4 +471,18 @@ color:black;
 }
 #myBtn:hover {
   background-color: #555;
+}
+
+ul.navbar-nav.login {
+    position: absolute;
+    right: 6px;
+    top: -30px;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light {
+    min-height: 116px;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light {
+    min-height: 116px;
 }
