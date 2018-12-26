@@ -486,3 +486,53 @@ nav.navbar.navbar-expand-lg.navbar-light {
 nav.navbar.navbar-expand-lg.navbar-light {
     min-height: 116px;
 }
+
+
+/*preloader*/
+.pre-loader{
+	
+	    background-image: url(../images/pre-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: relative; */
+    min-height: 100vh;
+    display: table;
+    width: 100vw;
+    text-align: center;
+	z-index:999999;
+		position:fixed;
+}
+
+.pre-content {
+    height: 100vh;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.pre-content img {
+    width: 43vw;
+}
+
+.pre-loader h3 {
+    font-family: 'Richela', sans-serif;
+    color: #ff4400;
+    font-size: 2.2em;
+}
+
+
+.pre-loader a{
+ 
+    background-color: #ffe84b;
+    padding: 10px 31px;
+    color: black;
+    text-decoration: none;
+    border-radius: 21px;
+        margin-top: 13px;
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+}
+.preloader-site{display:none;}
+body.preloader-site {
+    overflow: hidden;
+}
+

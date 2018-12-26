@@ -71,5 +71,17 @@ $(document).mousemove(function(e) {
   }, 2);
 
 
+  
+  
+  //preloader
+   
+   // $('.pre-loader a').show();
+    
+  
 }); //doc.ready end
-			
+	
+	
+$(window).on('load', function(){
+$('.pre-loader').hide(); 
+    // $('.pre-loader a').show();
+ });
