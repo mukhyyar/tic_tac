@@ -299,7 +299,7 @@
 </section>
 
 <!-- LOGIN -->
-<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade login" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -308,20 +308,20 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body text-center">
         <h1>Member Login </h1>
 		<form class="">
 		  <div class="form-group">
-			<label for="exampleDropdownFormEmail2">Email address</label>
+			
 			<input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
 		  </div>
 		  <div class="form-group">
-			<label for="exampleDropdownFormPassword2">Password</label>
+			
 			<input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
 		  </div>
 		  
-		  <div class="form-check">
-			<button type="submit" class="btn btn-primary">Sign in</button>
+		  <div class="form-group">
+			<button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
 			</div>
 		  <a href="javascript:;"> Forgot password ? </a>
 		</form>
@@ -333,7 +333,7 @@
 <!-- login modal -->
 
 <!-- Signup -->
-<div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade signup" id="signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -342,7 +342,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body text-center">
         <h1>Sign Up </h1>
 		<form class="">
 		  <div class="form-group">
@@ -355,8 +355,8 @@
 			<input type="password" class="form-control" id="" placeholder="Confirm Password">
 		  </div>
 		  
-		  <div class="form-check">
-			<button type="submit" class="btn btn-primary">Sign in</button>
+		  <div class="form-group">
+			<button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
 			</div>
 		  <a  href="javascript:;" hidden data-toggle="modal" data-target="#login" > Member Login </a>
 		</form>

@@ -536,3 +536,49 @@ body.preloader-site {
     overflow: hidden;
 }
 
+
+.signup .modal-dialog, .login .modal-dialog {
+max-width: 300px;
+font-family: 'Montserrat', sans-serif;
+}
+
+.signup .btn-primary, .login .btn-primary {
+    color: #fff;
+    background-color: #008d65;
+border-color: #008d65;
+    text-transform: uppercase;
+	}
+
+
+.signup .modal-content, .login .modal-content{
+background-color: #ececec;}
+
+ .login .form-control, .signup .form-control{
+background-color: #d3d3d3;}
+
+
+.login h1, .signup h1 {
+    font-size: 2em;
+}
+
+
+.login .modal-header, .signup .modal-header {
+    position: absolute;
+    right: -22px;
+    top: -28px;
+    border: none;
+}
+
+
+.login .close, .signup .close {
+    opacity: .9;
+}
+.login .modal-header span, .signup .modal-header span{
+    background: #f70101;
+    border-radius: 50%;
+    width: 27px;
+    height: 15px;
+    padding: 3px 9px;
+    color: white;
+    opacity: 47;
+}
