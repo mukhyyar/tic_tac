@@ -584,7 +584,8 @@ background-color: #d3d3d3;}
 }
 
 #music-lab iframe{
-    width: 100%;
-    min-height: 735px;
+      width: 76%;
+    min-height: 676px;
     border: none;
+    margin: 0 auto;
 }
